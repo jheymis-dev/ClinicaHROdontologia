@@ -71,7 +71,8 @@
         Localização
       </a>
 
-      <a (click)="handleExternalLink('https://wa.me/55989985912128')" target="_blank" title="Entre em contato pelo WhatsApp"
+      <a (click)="handleExternalLink('https://wa.me/55989985912128')" target="_blank"
+        title="Entre em contato pelo WhatsApp"
         class="bg-amber-600 hover:bg-amber-100 hover:text-amber-900 text-white  py-2 rounded-full text-sm zoom-effect border border-amber-600 text-center"
         role="button">
         Entre em contato&nbsp;
@@ -88,7 +89,7 @@
     class="relative h-[400px] bg-gray-400 flex items-center justify-center text-white text-center rounded-shadow rounded-2xl zoom-effect">
     <div class="absolute inset-0">
       <img class="object-cover object-right w-full h-full lg:object-center rounded-2xl" src="../assets/images/capa.jpg"
-        alt="capa" loading="lazy"/>
+        alt="capa" loading="lazy" />
     </div>
 
     <div class="absolute inset-0 bg-gray-900 bg-opacity-30 rounded-2xl"></div>
@@ -103,7 +104,8 @@
       <div class="space-x-4 font-secundaria">
         <button
           class="bg-amber-600 hover:bg-orange-100 hover:text-amber-900 text-white px-4 py-2 rounded-full border border-amber-600 zoom-effect">
-          <a href="https://wa.me/55989985912128" target="_blank" title="Entre em contato pelo WhatsApp" class="" role="button">
+          <a href="https://wa.me/55989985912128" target="_blank" title="Entre em contato pelo WhatsApp" class=""
+            role="button">
             Agendar Consulta
             <i class="fab fa-whatsapp fa-lg font-normal"></i>
           </a>
@@ -114,8 +116,15 @@
 
   <div class="flex flex-col justify-between">
     <div class="h-[250px] bg-gray-300 rounded-shadow rounded-2xl zoom-effect overflow-hidden">
-      <video class="absolute inset-0 w-full h-full object-cover rounded-2xl" loading="lazy" alt="video-capa"
-        src="/assets/images/6037409_Woman_Examination_3840x2160.mp4" type="video/mp4" autoplay muted loop playsinline>
+      <!-- <video class="absolute inset-0 w-full h-full object-cover rounded-2xl" loading="lazy" alt="video-capa"
+        src="../assets" type="video/mp4" autoplay muted
+        loop playsinline>
+      </video> -->
+
+      <video class="absolute inset-0 w-full h-full object-cover rounded-2xl" autoplay muted loop playsinline>
+        <source src="https://github.com/jheymis-dev/ClinicaHROdontologia/releases/download/video-mp4/6037409_Woman_Examination_3840x2160.mp44"
+          type="video/mp4">
+        Seu navegador não suporta a reprodução de vídeo.
       </video>
     </div>
 
@@ -201,7 +210,7 @@
       relative overflow-hidden md:flex-row items-center justify-center rounded-2xl rounded-shadow material-effect">
     <div class="absolute">
       <img class="object-right w-full h-full lg:object-center rounded-2xl" src="../assets/images/procedimento-03.jpg"
-        alt="imagem-de-fundo-procedimento" loading="lazy"/>
+        alt="imagem-de-fundo-procedimento" loading="lazy" />
     </div>
 
     <div class="absolute inset-0 bg-gray-900 bg-opacity-50 rounded-2xl"></div>
@@ -231,25 +240,25 @@
   <div class="grid md:grid-cols-2 gap-4 fade-section">
     <div
       class="h-[300px] md:h-[350px] lg:h-[320px] xl:h-[300px] bg-gray-400 rounded relative p-4 text-white rounded-shadow rounded-2xl zoom-effect overflow-hidden">
-      <video class="absolute inset-0 w-full h-full object-cover rounded-2xl" src="../assets/images/ambiente-01.mp4" loading="lazy"
-        autoplay muted loop playsinline>
+      <video class="absolute inset-0 w-full h-full object-cover rounded-2xl" src="../assets/images/ambiente-01.mp4"
+        loading="lazy" autoplay muted loop playsinline>
       </video>
     </div>
     <div>
       <div class="grid grid-cols-2 gap-4">
         <div class="h-[140px] bg-gray-300 rounded rounded-shadow rounded-2xl zoom-effect">
           <img class="object-cover object-right w-full h-full lg:object-center rounded-2xl zoom-effect overflow-hidden"
-            src="../assets/images/recepcao-01.jpeg" alt="ambiente-recepcao" loading="lazy"/>
+            src="../assets/images/recepcao-01.jpeg" alt="ambiente-recepcao" loading="lazy" />
         </div>
         <div class="h-[140px] bg-gray-300 rounded rounded-shadow rounded-2xl zoom-effect">
           <img class="object-cover object-right w-full h-full lg:object-center rounded-2xl zoom-effect overflow-hidden"
-            src="../assets/images/ambiente.jpeg" alt="ambiente-atendimento" loading="lazy"/>
+            src="../assets/images/ambiente.jpeg" alt="ambiente-atendimento" loading="lazy" />
         </div>
       </div>
       <div
         class="h-[300px] md:h-[190px] lg:h-[160px] xl:h-[140px] bg-gray-300 rounded mt-5 rounded-shadow rounded-2xl zoom-effect">
         <img class="object-cover object-right w-full h-full lg:object-center rounded-2xl"
-          src="../assets/images/procedimento-03.jpg" alt="imagem-de-fundo-procedimento" loading="lazy"/>
+          src="../assets/images/procedimento-03.jpg" alt="imagem-de-fundo-procedimento" loading="lazy" />
         <div
           class="absolute inset-0 bg-gray-900 bg-opacity-50 rounded-2xl flex justify-center items-center text-center md:items-start md:text-left md:items-center md:flex">
           <div class="relative">
@@ -260,7 +269,8 @@
             <div class="space-x-4 font-secundaria md:mx-3 pb-2">
               <button
                 class="bg-amber-600 hover:bg-orange-100 hover:text-amber-900 text-white px-4 py-2 rounded-full border border-amber-600 zoom-effect">
-                <a href="https://wa.me/55989985912128" target="_blank" title="Entre em contato pelo WhatsApp" class="" role="button">
+                <a href="https://wa.me/55989985912128" target="_blank" title="Entre em contato pelo WhatsApp" class=""
+                  role="button">
                   Agendar Consulta
                   <i class="fab fa-whatsapp fa-lg font-normal"></i>
                 </a>
@@ -277,7 +287,8 @@
 <section id="sobre" class="max-w-7xl mx-auto px-6 pt-12 pb-14 gap-4 items-center overflow-hidden">
   <h2 class="section-title mb-4 fade-section font-principal">Sobre a <span class="text-amber-500">Dra. Hanna
       Rocha</span></h2>
-  <div class="bg-image text-white rounded shadow rounded-2xl grid md:grid-cols-2 font-principal overflow-hidden fade-section">
+  <div
+    class="bg-image text-white rounded shadow rounded-2xl grid md:grid-cols-2 font-principal overflow-hidden fade-section">
     <div class="py-6 px-4 md:p-6 zoom-effect">
       <p class="leading-relaxed font-secundaria sombreamento">
         Com mais de 10 anos de experiência, Dra. Hanna Rocha é referência em odontologia estética e reabilitação oral.
@@ -310,7 +321,8 @@
       <div>
         <div class="flex justify-center mb-3 h-[220px]">
           <!-- Serviço 01 -->
-          <img src="../assets/images/procedimento-02.jpg" alt="imagem-procedimento-01" class="w-full rounded-t-2xl object-cover" loading="lazy">
+          <img src="../assets/images/procedimento-02.jpg" alt="imagem-procedimento-01"
+            class="w-full rounded-t-2xl object-cover" loading="lazy">
         </div>
         <div class="px-6 pb-6">
           <h3 class="font-bold mb-2 text-base">Ortodontia</h3>
@@ -324,7 +336,8 @@
       <div>
         <div class="flex justify-center mb-3 h-[220px]">
           <!-- Serviço 02 -->
-          <img src="../assets/images/paciente.jpg" alt="imagem-procedimento-02" class="w-full rounded-t-2xl object-cover" loading="lazy">
+          <img src="../assets/images/paciente.jpg" alt="imagem-procedimento-02"
+            class="w-full rounded-t-2xl object-cover" loading="lazy">
         </div>
         <div class="px-6 pb-6">
           <h3 class="font-bold mb-2 text-base">Clareamento</h3>
@@ -338,7 +351,8 @@
       <div>
         <div class="flex justify-center mb-3 h-[220px]">
           <!-- Serviço 03 -->
-          <img src="../assets/images/procedimento-03.jpg" alt="imagem-procedimento-03" class="w-full rounded-t-2xl object-cover" loading="lazy">
+          <img src="../assets/images/procedimento-03.jpg" alt="imagem-procedimento-03"
+            class="w-full rounded-t-2xl object-cover" loading="lazy">
         </div>
         <div class="px-6 pb-6">
           <h3 class="font-bold mb-2 text-base">Limpeza Dental</h3>
@@ -358,7 +372,8 @@
       <div class="flex justify-center font-secundaria">
         <button
           class="bg-amber-600 hover:bg-orange-100 hover:text-amber-900 text-white px-4 py-2 rounded-full zoom-effect border border-amber-600">
-          <a href="https://wa.me/55989985912128" target="_blank" title="Entre em contato pelo WhatsApp" class="" role="button">
+          <a href="https://wa.me/55989985912128" target="_blank" title="Entre em contato pelo WhatsApp" class=""
+            role="button">
             Agendar Consulta
             <i class="fab fa-whatsapp fa-lg font-normal"></i>
           </a>
@@ -410,7 +425,8 @@
     <div class="bg-white p-4 rounded-shadow rounded-2xl zoom-effect">
       <h3 class="font-bold mb-2">Como posso agendar uma consulta?</h3>
       <p>Você pode agendar sua consulta facilmente pelo nosso WhatsApp, basta clicar em
-        <a class="text-amber-500 hover:text-amber-900 font-bold" href="https://wa.me/55989985912128" target="_blank" title="Entre em contato pelo WhatsApp">
+        <a class="text-amber-500 hover:text-amber-900 font-bold" href="https://wa.me/55989985912128" target="_blank"
+          title="Entre em contato pelo WhatsApp">
           "Agendar Consulta"
         </a>.
       </p>
@@ -518,7 +534,8 @@
         </a>
       </p>
       <p>
-        <a class="hide-on-mobile" href="mailto:martinsjheymis@gmail.com" target="_blank" title="Entre em contato pelo Email">
+        <a class="hide-on-mobile" href="mailto:martinsjheymis@gmail.com" target="_blank"
+          title="Entre em contato pelo Email">
           <span class="font-semibold">Email: </span> <span
             class="hover:text-amber-500">clinica.hrodontologia&commat;gmail.com</span>
         </a>
@@ -565,7 +582,8 @@
       <h4 class="font-semibold mb-2">Contato</h4>
       <p>Centro - Presidente jucelino</p>
       <p class="my-2">
-        <a class="hide-on-mobile" href="mailto:martinsjheymis@gmail.com" target="_blank" title="Entre em contato pelo Email">
+        <a class="hide-on-mobile" href="mailto:martinsjheymis@gmail.com" target="_blank"
+          title="Entre em contato pelo Email">
           Email: <span class="hover:text-amber-500">clinica.hrodontologia&commat;gmail.com</span>
         </a>
       </p>
