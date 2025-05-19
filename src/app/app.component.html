@@ -1,0 +1,599 @@
+<!-- Navbar -->
+<header class="bg-image shadow p-2 font-secundaria">
+  <div class="max-w-7xl mx-auto flex items-center justify-between overflow-hidden">
+    <div>
+      <img src="../assets/images/logo_certa.png" class="w-32 p-2 rounded-lg" alt="logo" loading="lazy">
+    </div>
+
+    <!-- Desktop Menu -->
+    <div
+      class="hidden   sm:mr-4 md:block lg:flex lg:items-center lg:space-x-5 lg:ml-16 lg:mr-0 xl:ml-14  space-x-6 text-sm text-white">
+
+      <a href="#agendamento" title="" class="hover:text-amber-500">
+        Agendamento
+      </a>
+
+      <a href="#servicos" title="" class="hover:text-amber-500">
+        Serviços
+      </a>
+
+      <a href="#sobre" title="" class="hover:text-amber-500">
+        Sobre
+      </a>
+
+      <a href="#faq" title="" class="hover:text-amber-500">
+        Perguntas Frequentes
+      </a>
+
+      <a href="#localizacao" title="" class="hover:text-amber-500">
+        Localização
+      </a>
+    </div>
+
+    <button
+      class="hidden md:block bg-amber-600 hover:bg-orange-100 hover:text-amber-900 text-white px-4 py-2 rounded-full border border-amber-600 text-sm zoom-effect">
+      <a href="https://wa.me/55989985912128" target="_blank" title="" class="" role="button">
+        Entre em contato&nbsp;
+        <i class="fab fa-whatsapp fa-lg font-normal"></i>
+      </a>
+    </button>
+
+    <!-- Mobile Menu Button -->
+    <button (click)="toggleMenu()" type="button" class="p-2 -m-2 transition-all duration-200 md:hidden">
+      <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu com animação -->
+  <div class="lg:hidden border-t rounded-xl overflow-hidden" *ngIf="showMenu" @slideDownUp>
+    <nav class="flex flex-col my-2 mx-2 space-y-2 text-sm text-white">
+
+      <a (click)="scrollToSection('agendamento')" title="" class="hover:text-amber-500">
+        Agendamentos
+      </a>
+
+      <a (click)="scrollToSection('servicos')" title="" class="hover:text-amber-500">
+        Serviços
+      </a>
+
+      <a (click)="scrollToSection('sobre')" title="" class="hover:text-amber-500">
+        Sobre
+      </a>
+
+      <a (click)="scrollToSection('faq')" title="" class="hover:text-amber-500">
+        Perguntas Frequentes
+      </a>
+
+      <a (click)="scrollToSection('localizacao')" title="" class="hover:text-amber-500">
+        Localização
+      </a>
+
+      <a (click)="scrollToSection('home')" target="_blank" title=""
+        class="bg-amber-600 hover:bg-amber-100 hover:text-amber-900 text-white  py-2 rounded-full text-sm zoom-effect border border-amber-600 text-center"
+        role="button">
+        Entre em contato&nbsp;
+        <i class="fab fa-whatsapp fa-lg font-normal"></i>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home"
+  class="grid md:grid-cols-2 gap-4 max-w-7xl mx-auto p-6 pb-10 font-principal fade-section overflow-hidden">
+  <div
+    class="relative h-[400px] bg-gray-400 flex items-center justify-center text-white text-center rounded-shadow rounded-2xl zoom-effect">
+    <div class="absolute inset-0">
+      <img class="object-cover object-right w-full h-full lg:object-center rounded-2xl" src="../assets/images/capa.jpg"
+        alt="capa" loading="lazy"/>
+    </div>
+
+    <div class="absolute inset-0 bg-gray-900 bg-opacity-30 rounded-2xl"></div>
+
+    <div class="relative">
+      <h1 class="text-3xl font-bold mb-4" data-aos="fade-up">Dra. Hanna Rocha <br /> Sorrir é Viver Melhor</h1>
+      <p class="mb-4 mx-2 sm:mx-4 font-secundaria sombreamento" data-aos="fade-up" data-aos-delay="500">
+        Cirurgiã-dentista especializada em estética e saúde bucal.
+        Consultório moderno, atendimento humanizado e tratamentos
+        personalizados para transformar seu sorriso.
+      </p>
+      <div class="space-x-4 font-secundaria">
+        <button
+          class="bg-amber-600 hover:bg-orange-100 hover:text-amber-900 text-white px-4 py-2 rounded-full border border-amber-600 zoom-effect">
+          <a href="https://wa.me/55989985912128" target="_blank" title="" class="" role="button">
+            Agendar Consulta
+            <i class="fab fa-whatsapp fa-lg font-normal"></i>
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col justify-between">
+    <div class="h-[250px] bg-gray-300 rounded-shadow rounded-2xl zoom-effect overflow-hidden">
+      <video class="absolute inset-0 w-full h-full object-cover rounded-2xl" loading="lazy" alt="video-capa"
+        src="../assets/images/6037409_Woman_Examination_3840x2160.mp4" autoplay muted loop playsinline>
+      </video>
+    </div>
+
+    <div class="bg-white p-4 shadow rounded mt-4 rounded-2xl zoom-effect text-amber-700 font-secundaria">
+      <h2 class="font-bold text-lg mb-2">Por que nos escolher?</h2>
+      <div class="grid grid-cols-3 gap-2 text-center text-sm">
+
+        <div>
+          <span class="flex font-bold text-lg justify-center items-center count" data-target="10">
+            <img src="../assets/images/distintivo-01.png" alt="icone-medalha" class="w-5 ml-1" loading="lazy">
+          </span>
+          <p class="font-semibold">Anos de Experiência</p>
+        </div>
+        <div>
+          <span class="flex font-bold text-lg justify-center items-center count" data-target="500">
+            <img src="../assets/images/mais.png" alt="icone-mais" class="w-[14px] ml-1" loading="lazy">
+          </span>
+          <p class="font-semibold">Pacientes Satisfeitos</p>
+        </div>
+        <div>
+          <span class="flex font-bold text-lg justify-center items-center count" data-target="4.9">
+            <img src="../assets/images/estrela.png" alt="icone-estrela" class="w-4 ml-1" loading="lazy">
+          </span>
+          <p class="font-semibold">Avaliação Média</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Como Funciona -->
+<section id="agendamento" class="max-w-7xl mx-auto px-6 pb-10 pt-12 overflow-hidden">
+  <h2 class="section-title mb-4 font-principal fade-section">Entenda como <span class="text-amber-500">Funciona</span>
+  </h2>
+
+  <div class="grid md:grid-cols-3 gap-4 text-sm font-secundaria text-white fade-section">
+
+    <!-- Etapa 1 -->
+    <div class="bg-image rounded-shadow text-center rounded-2xl zoom-effect">
+      <div class="p-6">
+        <div class="flex justify-center mb-3">
+          <!-- Ícone de Calendário -->
+          <img src="../assets/images/calendario.png" alt="icone-calendario" class="w-12" loading="lazy">
+        </div>
+        <div>
+          <h3 class="font-bold mb-2 text-base">Agende sua consulta</h3>
+          <p>Entre em contato por telefone ou WhatsApp e marque um horário com a nossa equipe.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Etapa 2 -->
+    <div class="bg-image rounded-shadow text-center rounded-2xl zoom-effect">
+      <div class="p-6">
+        <div class="flex justify-center mb-3">
+          <!-- Ícone de Aperto de mão -->
+          <img src="../assets/images/aperto-de-mao.png" alt="aperto-de-mao" class="w-12" loading="lazy">
+        </div>
+        <div>
+          <h3 class="font-bold mb-2 text-base">Avaliação personalizada</h3>
+          <p>Na primeira consulta, a Dra. Hanna realiza uma avaliação detalhada e propõe o melhor plano de tratamento.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Etapa 3 -->
+    <div class="bg-image rounded-shadow text-center rounded-2xl zoom-effect">
+      <div class="p-6">
+        <div class="flex justify-center mb-3">
+          <!-- Ícone de Sorriso -->
+          <img src="../assets/images/feliz.png" alt="icone-sorriso" class="w-12" loading="lazy">
+        </div>
+        <div>
+          <h3 class="font-bold mb-2 text-base">Sorria com confiança</h3>
+          <p>Com tecnologia moderna e atendimento humanizado, você conquista um sorriso saudável e bonito.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray-300 h-[180px] sm:h-[140px] text-white my-4 rounded-shadow flex flex-col
+      relative overflow-hidden md:flex-row items-center justify-center rounded-2xl rounded-shadow material-effect">
+    <div class="absolute">
+      <img class="object-right w-full h-full lg:object-center rounded-2xl" src="../assets/images/procedimento-03.jpg"
+        alt="imagem-de-fundo-procedimento" loading="lazy"/>
+    </div>
+
+    <div class="absolute inset-0 bg-gray-900 bg-opacity-50 rounded-2xl"></div>
+
+    <div class="relative p-6 my-2 font-secundaria text-center fade-section">
+      <h3 class="mb-2 text-white sombreamento">Não perca tempo e aproveite essa oportunidade para deixar o seu
+        sorriso mais bonito. Agende sua consulta.</h3>
+      <div class="flex justify-center font-secundaria">
+        <button
+          class="bg-amber-600 hover:bg-orange-100 hover:text-amber-900 text-white px-4 py-2 rounded-full zoom-effect border border-amber-600">
+          <a href="https://wa.me/55989985912128" target="_blank" title="" role="button">
+            Agendar Consulta
+            <i class="fab fa-whatsapp fa-lg font-normal"></i>
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Ambiente Clínica -->
+<section class="max-w-7xl mx-auto px-6 pb-12 pt-6 overflow-hidden">
+  <h2 class="section-title mb-4 fade-section font-principal">Ambiente <span class="text-amber-500">Moderno e
+      Aconchegante</span></h2>
+  <div class="grid md:grid-cols-2 gap-4 fade-section">
+    <div
+      class="h-[300px] md:h-[350px] lg:h-[320px] xl:h-[300px] bg-gray-400 rounded relative p-4 text-white rounded-shadow rounded-2xl zoom-effect overflow-hidden">
+      <video class="absolute inset-0 w-full h-full object-cover rounded-2xl" src="../assets/images/ambiente-01.mp4" loading="lazy"
+        autoplay muted loop playsinline>
+      </video>
+    </div>
+    <div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="h-[140px] bg-gray-300 rounded rounded-shadow rounded-2xl zoom-effect">
+          <img class="object-cover object-right w-full h-full lg:object-center rounded-2xl zoom-effect overflow-hidden"
+            src="../assets/images/recepcao-01.jpeg" alt="ambiente-recepcao" loading="lazy"/>
+        </div>
+        <div class="h-[140px] bg-gray-300 rounded rounded-shadow rounded-2xl zoom-effect">
+          <img class="object-cover object-right w-full h-full lg:object-center rounded-2xl zoom-effect overflow-hidden"
+            src="../assets/images/ambiente.jpeg" alt="ambiente-atendimento" loading="lazy"/>
+        </div>
+      </div>
+      <div
+        class="h-[300px] md:h-[190px] lg:h-[160px] xl:h-[140px] bg-gray-300 rounded mt-5 rounded-shadow rounded-2xl zoom-effect">
+        <img class="object-cover object-right w-full h-full lg:object-center rounded-2xl"
+          src="../assets/images/procedimento-03.jpg" alt="imagem-de-fundo-procedimento" loading="lazy"/>
+        <div
+          class="absolute inset-0 bg-gray-900 bg-opacity-50 rounded-2xl flex justify-center items-center text-center md:items-start md:text-left md:items-center md:flex">
+          <div class="relative">
+            <p class="m-2 sm:mx-4 text-white font-secundaria sombreamento" data-aos="fade-up" data-aos-delay="500">
+              A Clínica HR Odontologia oferece um ambiente moderno, climatizado e acolhedor,
+              pensado para garantir conforto, segurança e tranquilidade enquanto você cuida do seu sorriso.
+            </p>
+            <div class="space-x-4 font-secundaria md:mx-3 pb-2">
+              <button
+                class="bg-amber-600 hover:bg-orange-100 hover:text-amber-900 text-white px-4 py-2 rounded-full border border-amber-600 zoom-effect">
+                <a href="https://wa.me/55989985912128" target="_blank" title="" class="" role="button">
+                  Agendar Consulta
+                  <i class="fab fa-whatsapp fa-lg font-normal"></i>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sobre Mim -->
+<section id="sobre" class="max-w-7xl mx-auto px-6 pt-12 pb-14 gap-4 items-center overflow-hidden">
+  <h2 class="section-title mb-4 fade-section font-principal">Sobre a <span class="text-amber-500">Dra. Hanna
+      Rocha</span></h2>
+  <div class="bg-image text-white rounded shadow rounded-2xl grid md:grid-cols-2 font-principal fade-section">
+    <div class="py-6 pl-4 md:p-6 zoom-effect">
+      <p class="leading-relaxed font-secundaria sombreamento">
+        Com mais de 10 anos de experiência, Dra. Hanna Rocha é referência em odontologia estética e reabilitação oral.
+        Formada pela Universidade Federal do Maranhão, possui especialização em prótese dentária e harmonização
+        orofacial. <br />
+        Seu atendimento é focado no bem-estar do paciente, oferecendo um ambiente acolhedor e tratamentos modernos com
+        resultados incríveis. <br />
+        <span class="hidden sm:block">Com mais de 10 anos de experiência, Dra. Hanna Rocha é referência em odontologia
+          estética e reabilitação oral.
+          Formada pela Universidade Federal do Maranhão, possui especialização em prótese dentária e harmonização
+          orofacial.
+        </span>
+      </p>
+    </div>
+    <div class="h-[400px] bg-gray-300 rounded-2xl zoom-effect">
+      <img src="../assets/images/IMG_20250411_141740.jpg" alt="doutora-hanna" loading="lazy"
+        class="object-cover object-right w-full h-full lg:object-center rounded-2xl">
+    </div>
+  </div>
+</section>
+
+<!-- Servicos -->
+<section id="servicos" class="max-w-7xl mx-auto px-6 pb-6 pt-6 overflow-hidden">
+  <h2 class="section-title mb-4 font-principal fade-section">Nossos <span class="text-amber-500">Serviços</span></h2>
+
+  <div class="grid md:grid-cols-3 gap-4 text-sm font-secundaria text-white fade-section">
+    <!-- Etapa 1 -->
+    <div class="bg-image-01 rounded-shadow text-center rounded-2xl zoom-effect">
+
+      <div>
+        <div class="flex justify-center mb-3 h-[220px]">
+          <!-- Serviço 01 -->
+          <img src="../assets/images/procedimento-02.jpg" alt="imagem-procedimento-01" class="w-full rounded-t-2xl object-cover" loading="lazy">
+        </div>
+        <div class="px-6 pb-6">
+          <h3 class="font-bold mb-2 text-base">Ortodontia</h3>
+          <p>Alinhamento dental com aparelhos modernos e discretos.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Etapa 2 -->
+    <div class="bg-image-01  rounded-shadow text-center rounded-2xl zoom-effect">
+      <div>
+        <div class="flex justify-center mb-3 h-[220px]">
+          <!-- Serviço 02 -->
+          <img src="../assets/images/paciente.jpg" alt="imagem-procedimento-02" class="w-full rounded-t-2xl object-cover" loading="lazy">
+        </div>
+        <div class="px-6 pb-6">
+          <h3 class="font-bold mb-2 text-base">Clareamento</h3>
+          <p>Sorria com mais brilho através de nosso clareamento profissional.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Etapa 3 -->
+    <div class="bg-image-01 rounded-shadow text-center rounded-2xl zoom-effect">
+      <div>
+        <div class="flex justify-center mb-3 h-[220px]">
+          <!-- Serviço 03 -->
+          <img src="../assets/images/procedimento-03.jpg" alt="imagem-procedimento-03" class="w-full rounded-t-2xl object-cover" loading="lazy">
+        </div>
+        <div class="px-6 pb-6">
+          <h3 class="font-bold mb-2 text-base">Limpeza Dental</h3>
+          <p>Remoção de placas e tártaro para um sorriso mais saudável.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="bg-image-01 h-[180px] sm:h-[140px] text-white my-4 rounded-shadow flex flex-col
+      relative overflow-hidden md:flex-row items-center justify-center rounded-2xl rounded-shadow material-effect">
+
+    <div class="relative p-6 my-2 font-secundaria text-center fade-section">
+      <h3 class="mb-2 text-white sombreamento">Não perca tempo e aproveite essa oportunidade para deixar o seu
+        sorriso mais bonito. Agende sua consulta.</h3>
+      <div class="flex justify-center font-secundaria">
+        <button
+          class="bg-amber-600 hover:bg-orange-100 hover:text-amber-900 text-white px-4 py-2 rounded-full zoom-effect border border-amber-600">
+          <a href="https://wa.me/55989985912128" target="_blank" title="" class="" role="button">
+            Agendar Consulta
+            <i class="fab fa-whatsapp fa-lg font-normal"></i>
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feedbacks -->
+<section class="max-w-7xl mx-auto px-6 pt-12 pb-6 overflow-hidden">
+  <h2 class="section-title mb-4 font-principal fade-section">
+    Feedback dos <span class="text-amber-500 mt-6">Nossos Clientes</span>
+  </h2>
+
+  <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 transition-all duration-500 ease-in-out fade-section">
+    <div *ngFor="let feedback of visibleFeedbacks"
+      class="bg-white p-4 rounded-shadow text-sm rounded-2xl shadow-md zoom-effect font-secundaria">
+      <p class="mb-2 italic">“{{ feedback.text }}”</p>
+      <div class="font-bold">{{ feedback.author }}</div>
+    </div>
+  </div>
+
+  <div class="mt-6 flex justify-center space-x-4">
+    <button (click)="showPrevFeedbacks()" [disabled]="currentIndex === 0"
+      class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full text-sm disabled:opacity-40">
+      Anterior
+    </button>
+    <button (click)="showNextFeedbacks()" [disabled]="currentIndex + itemsPerPage >= feedbacks.length"
+      class="bg-amber-600 hover:bg-orange-100 hover:text-amber-900 text-white px-4 py-2 rounded-full text-sm disabled:opacity-40 border border-amber-600">
+      Próximo
+    </button>
+  </div>
+</section>
+
+<!-- Perguntas Frequentes FAQ -->
+<section id="faq" class="max-w-7xl mx-auto px-6 pt-12 pb-10 overflow-hidden">
+  <h2 class="section-title mb-4 font-principal fade-section">Perguntas <span class="text-amber-500">Frequentes</span>
+  </h2>
+  <div class="grid md:grid-cols-2 gap-4 text-sm font-secundaria fade-section">
+    <div class="bg-white p-4 rounded-shadow rounded-2xl zoom-effect">
+      <h3 class="font-bold mb-2">Quais tipos de procedimentos vocês realizam na clínica?</h3>
+      <p>Oferecemos desde atendimentos preventivos, como limpezas e avaliações,
+        até tratamentos estéticos e cirurgias odontológicas, como clareamento,
+        lentes de contato dental, implantes, ortodontia e muito mais.
+      </p>
+    </div>
+
+    <div class="bg-white p-4 rounded-shadow rounded-2xl zoom-effect">
+      <h3 class="font-bold mb-2">Como posso agendar uma consulta?</h3>
+      <p>Você pode agendar sua consulta facilmente pelo nosso WhatsApp, basta clicar em
+        <a class="text-amber-500 hover:text-amber-900 font-bold" href="https://wa.me/55989985912128" target="_blank">"Agendar
+          Consulta"</a>.
+      </p>
+    </div>
+
+    <div class="bg-white p-4 rounded-shadow rounded-2xl zoom-effect">
+      <h3 class="font-bold mb-2">A clínica atende convênios odontológicos?</h3>
+      <p>Atualmente trabalhamos com atendimentos particulares. Porém,
+        oferecemos condições acessíveis e opções de parcelamento para
+        facilitar o seu tratamento.
+      </p>
+    </div>
+
+    <div class="bg-white p-4 rounded-shadow rounded-2xl zoom-effect">
+      <h3 class="font-bold mb-2">O atendimento é feito apenas com hora marcada?</h3>
+      <p>Sim, para garantir conforto e atenção personalizada a cada paciente,
+        trabalhamos com agendamento prévio.
+      </p>
+    </div>
+
+    <div class="bg-white p-4 rounded-shadow rounded-2xl zoom-effect">
+      <h3 class="font-bold mb-2">É possível fazer avaliação gratuita?</h3>
+      <p>Realizamos avaliações com valores acessíveis, onde analisamos sua necessidade
+        e indicamos o melhor plano de tratamento para você.
+      </p>
+    </div>
+
+    <div class="bg-white p-4 rounded-shadow rounded-2xl zoom-effect">
+      <h3 class="font-bold mb-2">A clínica possui acessibilidade para pessoas com mobilidade reduzida?</h3>
+      <p>Sim! Nosso espaço é totalmente planejado para receber todos com conforto e segurança,
+        incluindo rampa de acesso e ambiente amplo.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Nossa Equipe -->
+<section class="max-w-7xl mx-auto px-6 pt-12 pb-10 overflow-hidden">
+  <h2 class="section-title mb-4 font-principal fade-section">Conheça Nossa <span class="text-amber-500">Equipe</span>
+  </h2>
+
+  <div class="grid md:grid-cols-3 gap-4 text-center text-sm text-white font-secundaria fade-section">
+    <div class="p-4 rounded-shadow rounded-2xl bg-image zoom-effect">
+      <div class="h-32 w-32 mx-auto bg-gray-300 rounded-full mb-2 overflow-hidden">
+        <img src="../assets/images/equipe-01.jpeg" alt="hanna-rocha" loading="lazy">
+      </div>
+      <div class="font-bold">Dra. Hanna Rocha</div>
+      <div class="subtext">Clínica Geral</div>
+    </div>
+    <div class="p-4 rounded-shadow rounded-2xl bg-image zoom-effect">
+      <div class="h-32 w-32 mx-auto bg-gray-300 rounded-full mb-2 overflow-hidden">
+        <img src="../assets/images/equipe-02.jpeg" alt="caio-dourado" loading="lazy">
+      </div>
+      <div class="font-bold">Dr. Caio Dourado</div>
+      <div class="subtext">Aparelhos Dentários</div>
+    </div>
+    <div class="p-4 rounded-shadow rounded-2xl bg-image zoom-effect">
+      <div class="h-32 w-32 mx-auto bg-gray-300 rounded-full mb-2 overflow-hidden">
+        <img src="../assets/images/equipe-03.jpeg" alt="wallace-mendes" loading="lazy">
+      </div>
+      <div class="font-bold">Dr. Wallace Mendes</div>
+      <div class="subtext">Tratamento de Canal</div>
+    </div>
+
+    <div class="p-4 rounded-shadow rounded-2xl bg-image zoom-effect">
+      <div class="h-32 w-32 mx-auto bg-gray-300 rounded-full mb-2 overflow-hidden">
+        <img src="../assets/images/equipe-04.jpeg" alt="larissa-melo" loading="lazy">
+      </div>
+      <div class="font-bold">Dra. Larissa melo</div>
+      <div class="subtext">Tratamento de Canal</div>
+    </div>
+
+    <div class="p-4 rounded-shadow rounded-2xl bg-image zoom-effect">
+      <div class="h-32 w-32 mx-auto bg-gray-300 rounded-full mb-2 overflow-hidden">
+        <img src="../assets/images/equipe-05.jpeg" alt="israel-carvalho" loading="lazy">
+      </div>
+      <div class="font-bold">Dr. Israel Carvalho</div>
+      <div class="subtext">Implantes Dentários</div>
+    </div>
+
+    <div class="bg-image py-4 px-2 md:p-4 rounded-shadow rounded-2xl zoom-effect">
+      <div class="text-white fade-section">Nosso time é formado por profissionais altamente capacitados,
+        apaixonados pelo que fazem e comprometidos em oferecer um atendimento humanizado e de excelência.
+        Cada especialista da Clínica HR Odontologia atua com responsabilidade, empatia e constante
+        atualização, garantindo segurança, conforto e os melhores resultados para o seu sorriso.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Localização -->
+<section id="localizacao" class="max-w-7xl mx-auto p-6 overflow-hidden">
+  <h2 class="section-title mb-4 font-principal fade-section">Visite Nosso <span
+      class="text-amber-500">Consultório</span></h2>
+
+  <div class="grid md:grid-cols-2 gap-4 items-center fade-section">
+    <div class="bg-white p-4 rounded-shadow text-sm rounded-2xl font-secundaria zoom-effect">
+      <h3 class="font-bold mb-2">Nossa Localização</h3>
+      <p class="mb-2">Venha nos visitar em nosso consultório no coração de Presidente Jucelino.</p>
+      <p><span class="font-semibold">Endereço:</span> Praça Ivar Saldanha ou (Praça do Tamarineiro), <br />
+        Centro - Presidente jucelino</p>
+      <p>
+        <a href="https://wa.me/55989985912128" target="_blank" title="">
+          <span class="font-semibold">Telefone: </span> <span class="hover:text-amber-500">(98) 98591-2128</span>
+        </a>
+      </p>
+      <p>
+        <a class="hide-on-mobile" href="mailto:martinsjheymis@gmail.com" target="_blank" title="Email">
+          <span class="font-semibold">Email: </span> <span
+            class="hover:text-amber-500">clinica.hrodontologia&commat;gmail.com</span>
+        </a>
+      </p>
+      <a href="https://www.google.com/maps/place/Pres.+Juscelino,+MA,+65140-000/@-2.9271883,-44.0650299,3a,75y,127.46h,89.85t/data=!3m7!1e1!3m5!1sGsZax-pC3x_ELf63wlXa5Q!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0.1458131521573307%26panoid%3DGsZax-pC3x_ELf63wlXa5Q%26yaw%3D127.45612816755646!7i16384!8i8192!4m6!3m5!1s0x7f41530aecb9cb7:0xfcad619602413141!8m2!3d-2.9262453!4d-44.0640025!16s%2Fg%2F1ywtx3j3_?entry=ttu&g_ep=EgoyMDI1MDQyMi4wIKXMDSoASAFQAw%3D%3D"
+        target="_blank"
+        class="inline-flex items-center gap-2 mt-4 bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-full text-sm transition">
+        Localização
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="h-4 w-4">
+          <path fill="currentColor"
+            d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+        </svg>
+      </a>
+    </div>
+    <div class="rounded-shadow overflow-hidden rounded-2xl h-[220px] zoom-effect">
+      <iframe class="w-full h-full md:h-full rounded-2xl"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1992.3069303282225!2d-44.06605554810465!3d-2.9268206800571734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f46ad327c64d3f%3A0xc0561b37134c4ff3!2sJb%20Mineral!5e0!3m2!1spt-BR!2sbr!4v1745527492367!5m2!1spt-BR!2sbr"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-white py-8 mt-12 font-secundaria">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-6 px-6 text-sm overflow-hidden">
+    <div>
+      <div>
+        <img src="../assets/images/logo_certa.png" class="w-32 p-2 rounded-lg" alt="logo" loading="lazy">
+      </div>
+      <p>Sorrir é viver melhor.</p>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Quick Links</h4>
+      <ul class="space-y-1">
+        <li><a href="#agendamento" class="hover:text-yellow-500">Agendamento</a></li>
+        <li><a href="#servicos" class="hover:text-yellow-500">Serviços</a></li>
+        <li><a href="#sobre" class="hover:text-yellow-500">Sobre</a></li>
+        <li><a href="#faq" class="hover:text-yellow-500">Perguntas Frequentes</a></li>
+        <li><a href="#localizacao" class="hover:text-yellow-500">Localização</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Contato</h4>
+      <p>Centro - Presidente jucelino</p>
+      <p class="my-2">
+        <a class="hide-on-mobile" href="mailto:martinsjheymis@gmail.com" target="_blank" title="Email">
+          Email: <span class="hover:text-amber-500">clinica.hrodontologia&commat;gmail.com</span>
+        </a>
+      </p>
+      <p>
+        <a href="https://wa.me/55989985912128" target="_blank" title="">
+          Telefone: <span class="hover:text-amber-500">(98) 98591-2128</span>
+        </a>
+      </p>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Horarios</h4>
+      <ul class="space-y-1">
+        <li><span class="font-semibold">Seg - Qui</span> : 9:00am – 6:00pm</li>
+        <li><span class="font-semibold">Sáb</span> : 10:00am – 4:00pm</li>
+        <li><span class="font-semibold">Dom</span> : Fechado</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-gray-700 mt-8 pt-4 text-center text-xs text-gray-400 leading-relaxed">
+    &copy; 2025 ClinicaHROdontologia. Todos os direitos reservados.<br>
+    <a target="_blank" href="https://www.linkedin.com/in/jheymisson-martins-b0a0742a4/">
+      Desenvolvido por <span class="text-amber-500 hover:text-blue-500">Jheymis Martins</span></a>
+  </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="backToTop"
+  class="flex fixed bottom-6 right-6 bg-amber-500 hover:bg-yellow-600 text-white pr-4 pl-2 py-2 rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-500">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 4l-8 8h6v8h4v-8h6z" />
+  </svg> Topo
+</button>
