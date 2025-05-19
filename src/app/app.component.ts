@@ -43,7 +43,7 @@ export class AppComponent implements AfterViewInit {
   constructor(
     private cdr: ChangeDetectorRef,
     @Inject(PLATFORM_ID) private platformId: Object
-  ) {}
+  ) { }
 
   // ------------------------------FEEDBACKS---------------------------------------
   get visibleFeedbacks() {
@@ -66,6 +66,14 @@ export class AppComponent implements AfterViewInit {
   // ------------------------------FEEDBACKS---------------------------------------
 
   // ------------------------------MENU---------------------------------------
+  handleExternalLink(url: string) {
+    // Fecha o menu
+    this.showMenu = false;
+
+    // Abre o link externo em nova aba
+    window.open(url, '_blank');
+  }
+
   toggleMenu() {
     this.showMenu = !this.showMenu;
   }
