@@ -1,27 +1,97 @@
-# ClinicaOdontologica
+# Clínica HR Odontologia
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+Aplicação web desenvolvida como projeto front-end utilizando Angular, com foco em componentização, organização modular e responsividade.
 
-## Development server
+O projeto simula o site institucional de uma clínica odontológica, aplicando boas práticas de estruturação front-end moderno.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Tailwind CSS
+- NPM
+- Git & GitHub
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Objetivo do Projeto
 
-## Running unit tests
+Desenvolver uma aplicação SPA (Single Page Application) moderna, com layout responsivo e organização de componentes reutilizáveis, simulando um ambiente real de desenvolvimento front-end.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Funcionalidades Implementadas
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Estrutura SPA utilizando Angular
+- Componentização de seções da página
+- Layout responsivo (Mobile First)
+- Estrutura modular organizada
+- Design moderno utilizando Tailwind CSS
+- Navegação fluida entre seções
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Como Executar o Projeto Localmente
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/jheymis-dev/ClinicaHROdontologia.git
+```
+
+Acesse a pasta do projeto:
+
+```bash
+cd ClinicaHROdontologia
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o servidor de desenvolvimento:
+
+```bash
+ng serve
+```
+
+Acesse no navegador:
+
+http://localhost:4200
+
+
+## Pré-requisitos
+
+Para executar o projeto é necessário ter instalado:
+
+- Node.js
+- NPM
+- Angular CLI
+
+
+## Deploy
+
+Projeto publicado na Vercel:
+
+https://clinica-hr-odontologia.vercel.app/
+
+
+## Aprendizados
+
+Durante o desenvolvimento deste projeto, foram aplicados conceitos como:
+
+- Organização e reutilização de componentes
+- Estruturação semântica de HTML
+- Responsividade com Tailwind CSS
+- Versionamento de código com Git
+- Organização de projeto Angular
+
+
+## Autor
+
+Desenvolvido por **Jheymisson Martins Ferreira**
+
+GitHub: https://github.com/jheymis-dev  
+LinkedIn: https://linkedin.com/in/jheymisson-martins-dev
