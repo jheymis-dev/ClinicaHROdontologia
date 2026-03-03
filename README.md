@@ -42,7 +42,7 @@ git clone https://github.com/jheymis-dev/ClinicaHROdontologia.git
 Acesse a pasta do projeto:
 
 ```bash
-cd ClinicaHROdontologia
+cd clinica-odontologica
 ```
 
 Instale as dependências:
@@ -54,12 +54,8 @@ npm install
 Execute o servidor de desenvolvimento:
 
 ```bash
-ng serve
+ng serve --open
 ```
-
-Acesse no navegador:
-
-http://localhost:4200
 
 
 ## Pré-requisitos
